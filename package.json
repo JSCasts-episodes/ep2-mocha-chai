@@ -1,0 +1,16 @@
+{
+  "name": "ep2",
+  "version": "1.0.0",
+  "description": "jscasts - episode 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wojciech Krysiak",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^17.8.1",
+    "joi": "^14.3.1",
+    "mongoose": "^5.4.1"
+  }
+}
