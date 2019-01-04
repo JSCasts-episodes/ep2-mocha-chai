@@ -1,3 +1,5 @@
+const moment = require('moment')
+
 class UserDecorator {
   constructor(user) {
     this.user = user
@@ -5,6 +7,10 @@ class UserDecorator {
 
   name() {
     return [this.user.firstName, this.user.lastName].join(' ')
+  }
+
+  dateOfBirth() {
+    return moment(this.user.dateOfBirth).format('YYYY-MM-DD')
   }
 
   serialize() {

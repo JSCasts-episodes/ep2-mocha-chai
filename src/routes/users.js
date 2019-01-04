@@ -16,6 +16,7 @@ module.exports = {
   handler: async (request, h) => {
     const { page, perPage } = request.query
     const users = await User.find({})
+      .sort({ firstName: 1 })
       .skip((page - 1) * perPage)
       .limit(perPage)
     return {
